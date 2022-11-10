@@ -252,7 +252,7 @@
 		qdel(AE)
 
 	var/datum/cause_data/cause = create_cause_data("chestbursting", src)
-	if(burstcount >= 4)
+	if(burstcount >= 3)
 		victim.gib(cause)
 	else
 		if(ishuman(victim))
